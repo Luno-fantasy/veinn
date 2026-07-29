@@ -217,11 +217,11 @@ a {
   gap: clamp(0.08em, 1.4vw, 0.18em);
   margin: 0;
   color: var(--ivory);
-  font-family: "Cormorant Garamond", "Times New Roman", serif;
-  font-size: clamp(74px, 16vw, 210px);
+  font-family: "Bodoni Moda", "Times New Roman", serif;
+  font-size: clamp(68px, 15vw, 190px);
   font-weight: 400;
   line-height: 0.82;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.025em;
   text-shadow:
     0 0 40px rgba(242, 234, 223, 0.08),
     0 14px 42px rgba(0, 0, 0, 0.55);
