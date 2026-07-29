@@ -3,23 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090507" />
+  <meta name="description" content="VEINN A FLOOR — Velvet, Gold, Elegance." />
   <title>A FLOOR — VEINN</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main class="placeholder-page" style="background: radial-gradient(circle at 50% 20%, rgba(94,18,38,.32), transparent 42%), #070506;">
-    <section class="placeholder-panel">
-      <p class="eyebrow">VELVET · GOLD · ELEGANCE</p>
-      <h1>A FLOOR</h1>
-      <p>
-        ここにA FLOORの紹介、キャスト、ギャラリーを追加していきます。<br />
-        現在は入口からの遷移を確認するための仮ページです。
-      </p>
-      <a href="index.html">RETURN TO ENTRANCE</a>
+<body class="floor-body floor-body--a">
+  <header class="floor-nav">
+    <a class="floor-nav__brand" href="index.html" aria-label="VEINN入口へ">VEINN</a>
+    <nav aria-label="フロアナビゲーション">
+      <a class="is-current" href="a-floor.html">A FLOOR</a>
+      <a href="b-floor.html">B FLOOR</a>
+      <a href="index.html">ENTRANCE</a>
+    </nav>
+  </header>
+
+  <main class="floor-page floor-page--a">
+    <section class="floor-hero floor-hero--a">
+      <div class="floor-hero__veil" aria-hidden="true"></div>
+      <div class="floor-hero__monogram" aria-hidden="true">A</div>
+      <div class="floor-hero__content">
+        <p class="eyebrow">VELVET · GOLD · ELEGANCE</p>
+        <h1>A FLOOR</h1>
+        <p class="floor-hero__lead">完成された美しさが支配する、<br />VEINNのメインフロア。</p>
+        <a class="scroll-link" href="#about">DISCOVER THE FLOOR</a>
+      </div>
+    </section>
+
+    <section class="floor-section floor-about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 · ABOUT</p>
+        <h2>Elegance after dark.</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-grid__lead">VEINNの顔となる、<br />王道にして最も妖艶なフロア。</p>
+        <div class="about-grid__copy">
+          <p>洗練されたステージ、優雅な接客、選び抜かれたダンサーたち。</p>
+          <p>ポールダンス、フロアワーク、バーレスクを中心としたショーが、訪れる者を非日常へと誘う。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="floor-section service-section">
+      <div class="section-heading">
+        <p class="eyebrow">02 · SHOW &amp; SERVICE</p>
+        <h2>Choose your desire.</h2>
+      </div>
+      <div class="service-grid">
+        <article><span>01</span><h3>STAGE SHOW</h3><p>ポールダンスやバーレスクを中心とした、VEINNの夜を象徴するステージ。</p></article>
+        <article><span>02</span><h3>LAP DANCE</h3><p>選んだダンサーと過ごす、視線も距離も近い特別な時間。</p></article>
+        <article><span>03</span><h3>PRIVATE DANCE</h3><p>個室で行われる、ひとりのゲストだけのためのプライベートパフォーマンス。</p></article>
+        <article><span>04</span><h3>PINK ROOM</h3><p>限られたゲストのみが案内される、VEINN最奥の特別室。</p></article>
+      </div>
+    </section>
+
+    <section class="floor-section cast-section" id="cast">
+      <div class="section-heading section-heading--split">
+        <div><p class="eyebrow">03 · CAST</p><h2>Men of A Floor.</h2></div>
+        <p>カードをタップするとプロフィールが開きます。</p>
+      </div>
+      <div class="cast-grid">
+        <button class="cast-card" type="button" data-cast="shien"><span class="cast-card__rank">NO.1</span><span class="cast-card__initial">紫</span><span class="cast-card__name">紫艶</span><span class="cast-card__copy">微笑みの奥を、誰にも見せない。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="rensei"><span class="cast-card__rank">NO.2</span><span class="cast-card__initial">蓮</span><span class="cast-card__name">蓮静</span><span class="cast-card__copy">誠実な言葉ほど、逃げ道を奪う。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="toa"><span class="cast-card__rank">NO.3</span><span class="cast-card__initial">永</span><span class="cast-card__name">永愛</span><span class="cast-card__copy">甘い距離感は、すべて計算済み。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="reimu"><span class="cast-card__rank">NO.4</span><span class="cast-card__initial">澪</span><span class="cast-card__name">澪夢</span><span class="cast-card__copy">可愛いだけで終わると思わないで。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="izayoi"><span class="cast-card__rank">MANAGER</span><span class="cast-card__initial">十</span><span class="cast-card__name">十六夜</span><span class="cast-card__copy">店を守る男は、感情を見せない。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="hishio"><span class="cast-card__rank">BARTENDER</span><span class="cast-card__initial">陽</span><span class="cast-card__name">陽汐</span><span class="cast-card__copy">グラス越しなら、少しだけ素直に。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+      </div>
+    </section>
+
+    <section class="owner-story">
+      <p class="eyebrow">04 · THE NEW OWNER</p>
+      <h2>祖父から受け継いだのは、<br />一軒のクラブと、癖の強い男たち。</h2>
+      <p>今夜からあなたは、VEINNの新しいオーナーになる。</p>
+    </section>
+
+    <section class="story-link story-link--a">
+      <p class="eyebrow">ENTER THE STORY</p>
+      <h2>この夜の続きを、ZETAで。</h2>
+      <a href="https://zeta-ai.io/ja/plots/9802dc41-22ca-48ca-bf9f-8503c04b9bb0/profile?share_id=s9zvphhwv" target="_blank" rel="noopener noreferrer">PLAY A FLOOR ON ZETA</a>
     </section>
   </main>
+
+  <footer class="floor-footer"><a href="b-floor.html">NEXT · B FLOOR →</a><p>VEINN INTRODUCTION WEBSITE</p></footer>
+
+  <dialog class="cast-dialog" id="castDialog" aria-labelledby="castDialogName">
+    <button class="cast-dialog__close" type="button" aria-label="プロフィールを閉じる">×</button>
+    <p class="cast-dialog__rank" id="castDialogRank"></p>
+    <h2 id="castDialogName"></h2>
+    <p class="cast-dialog__meta" id="castDialogMeta"></p>
+    <p class="cast-dialog__description" id="castDialogDescription"></p>
+    <p class="cast-dialog__quote" id="castDialogQuote"></p>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>

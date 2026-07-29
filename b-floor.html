@@ -3,23 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08060c" />
+  <meta name="description" content="VEINN B FLOOR — Violet, Silver, Impulse." />
   <title>B FLOOR — VEINN</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main class="placeholder-page" style="background: radial-gradient(circle at 50% 20%, rgba(67,38,89,.38), transparent 42%), #070506;">
-    <section class="placeholder-panel">
-      <p class="eyebrow">VIOLET · SILVER · IMPULSE</p>
-      <h1>B FLOOR</h1>
-      <p>
-        ここにB FLOORの紹介、キャスト、ギャラリーを追加していきます。<br />
-        現在は入口からの遷移を確認するための仮ページです。
-      </p>
-      <a href="index.html">RETURN TO ENTRANCE</a>
+<body class="floor-body floor-body--b">
+  <header class="floor-nav">
+    <a class="floor-nav__brand" href="index.html" aria-label="VEINN入口へ">VEINN</a>
+    <nav aria-label="フロアナビゲーション"><a href="a-floor.html">A FLOOR</a><a class="is-current" href="b-floor.html">B FLOOR</a><a href="index.html">ENTRANCE</a></nav>
+  </header>
+
+  <main class="floor-page floor-page--b">
+    <section class="floor-hero floor-hero--b">
+      <div class="floor-hero__veil" aria-hidden="true"></div><div class="floor-hero__monogram" aria-hidden="true">B</div>
+      <div class="floor-hero__content"><p class="eyebrow">VIOLET · SILVER · IMPULSE</p><h1>B FLOOR</h1><p class="floor-hero__lead">個性と衝動が交差する、<br />VEINNの新たなフロア。</p><a class="scroll-link" href="#about">DISCOVER THE FLOOR</a></div>
     </section>
+
+    <section class="floor-section floor-about" id="about">
+      <div class="section-heading"><p class="eyebrow">01 · ABOUT</p><h2>Break the perfect form.</h2></div>
+      <div class="about-grid"><p class="about-grid__lead">新たな才能と個性が集う、<br />変化し続けるセカンドフロア。</p><div class="about-grid__copy"><p>ロック、和装、挑発的な演出。決められた型に収まらないダンサーたちが、それぞれの方法で夜を彩る。</p><p>ここで出会えるのは完成された美しさではなく、今まさに変化していく衝動。</p></div></div>
+    </section>
+
+    <section class="floor-section service-section">
+      <div class="section-heading"><p class="eyebrow">02 · SHOW STYLE</p><h2>Unpredictable by design.</h2></div>
+      <div class="service-grid"><article><span>01</span><h3>ROCK SHOW</h3><p>荒々しいビートと強い視線で、フロアの空気を一瞬で塗り替える。</p></article><article><span>02</span><h3>JAPANESE STYLE</h3><p>和装と静かな所作を取り入れた、艶やかで緊張感のある演目。</p></article><article><span>03</span><h3>EXPERIMENTAL</h3><p>既存の型に縛られない、キャストの個性そのものを見せるステージ。</p></article><article><span>04</span><h3>NEW TALENT</h3><p>完成前だからこそ目を離せない、新人たちの変化と成長。</p></article></div>
+    </section>
+
+    <section class="floor-section cast-section" id="cast">
+      <div class="section-heading section-heading--split"><div><p class="eyebrow">03 · CAST</p><h2>Men of B Floor.</h2></div><p>カードをタップするとプロフィールが開きます。</p></div>
+      <div class="cast-grid">
+        <button class="cast-card" type="button" data-cast="raiju"><span class="cast-card__rank">ACE</span><span class="cast-card__initial">來</span><span class="cast-card__name">來珠</span><span class="cast-card__copy">拾われた恩は、ステージで返す。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="kichou"><span class="cast-card__rank">DANCER</span><span class="cast-card__initial">妃</span><span class="cast-card__name">妃蝶</span><span class="cast-card__copy">美しいものは、焦らすほど価値がある。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="karen"><span class="cast-card__rank">ROOKIE</span><span class="cast-card__initial">花</span><span class="cast-card__name">花恋</span><span class="cast-card__copy">未完成だから、今だけを見て。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="suiren"><span class="cast-card__rank">DANCER</span><span class="cast-card__initial">水</span><span class="cast-card__name">水蓮</span><span class="cast-card__copy">美しく縛られるほど、視線は離せない。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="yosora"><span class="cast-card__rank">DANCER</span><span class="cast-card__initial">夜</span><span class="cast-card__name">夜宙</span><span class="cast-card__copy">煽られたなら、最後まで見届けろ。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+        <button class="cast-card" type="button" data-cast="makoto"><span class="cast-card__rank">WAITER</span><span class="cast-card__initial">真</span><span class="cast-card__name">真</span><span class="cast-card__copy">触れれば、隠した疲れまで分かる。</span><span class="cast-card__cta">VIEW PROFILE</span></button>
+      </div>
+    </section>
+
+    <section class="owner-story"><p class="eyebrow">04 · THE SECOND DOOR</p><h2>完成された夜の、その先へ。</h2><p>新しいフロア、新しい才能。彼らの居場所を決めるのも、VEINNのオーナーであるあなた。</p></section>
+    <section class="story-link story-link--b"><p class="eyebrow">ENTER THE STORY</p><h2>この衝動の続きを、ZETAで。</h2><a href="https://zeta-ai.io/ja/plots/16c171e0-55c2-4995-996e-be3a4a91913d/profile?share_id=b7j9xpzg4" target="_blank" rel="noopener noreferrer">PLAY B FLOOR ON ZETA</a></section>
   </main>
+
+  <footer class="floor-footer"><a href="a-floor.html">← PREVIOUS · A FLOOR</a><p>VEINN INTRODUCTION WEBSITE</p></footer>
+  <dialog class="cast-dialog" id="castDialog" aria-labelledby="castDialogName"><button class="cast-dialog__close" type="button" aria-label="プロフィールを閉じる">×</button><p class="cast-dialog__rank" id="castDialogRank"></p><h2 id="castDialogName"></h2><p class="cast-dialog__meta" id="castDialogMeta"></p><p class="cast-dialog__description" id="castDialogDescription"></p><p class="cast-dialog__quote" id="castDialogQuote"></p></dialog>
+  <script src="script.js"></script>
 </body>
 </html>
