@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#070506" />
+  <meta
+    name="description"
+    content="VEINN — A FLOOR / B FLOOR の入口をイメージした紹介サイト"
+  />
+  <title>VEINN</title>
+
+  <!-- 外部フォント。オフラインでも代替フォントで表示されます。 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="site-shell" id="siteShell">
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <button
+        class="sound-toggle"
+        id="soundToggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="環境音の切り替え"
+      >
+        <span class="sound-toggle__dot" aria-hidden="true"></span>
+        <span class="sound-toggle__label">SOUND OFF</span>
+      </button>
+    </header>
+
+    <main>
+      <!-- INTRO -->
+      <section class="screen intro-screen is-active" id="introScreen" aria-labelledby="veinnTitle">
+        <div class="ornament ornament--top" aria-hidden="true">
+          <span></span>
+          <i></i>
+          <span></span>
+        </div>
+
+        <div class="intro-content">
+          <p class="eyebrow">PRIVATE NIGHT CLUB</p>
+
+          <h1 class="logo" id="veinnTitle" aria-label="VEINN">
+            <span>V</span><span>E</span><span>I</span><span>N</span><span>N</span>
+          </h1>
+
+          <p class="intro-copy">
+            Where elegance descends into the night.
+          </p>
+
+          <button class="enter-button" id="enterButton" type="button">
+            <span class="enter-button__line" aria-hidden="true"></span>
+            <span>ENTER</span>
+            <span class="enter-button__line" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="door-glow" aria-hidden="true"></div>
+
+        <p class="scroll-note">AUTHORIZED ACCESS ONLY</p>
+      </section>
+
+      <!-- FLOOR SELECT -->
+      <section class="screen floor-screen" id="floorScreen" aria-labelledby="floorTitle" aria-hidden="true">
+        <div class="floor-heading">
+          <p class="eyebrow">WELCOME TO VEINN</p>
+          <h2 id="floorTitle">Choose your floor.</h2>
+          <p>今夜、どちらの扉を開きますか。</p>
+        </div>
+
+        <div class="floor-grid">
+          <a
+            class="floor-card floor-card--a"
+            href="a-floor.html"
+            aria-label="A FLOORへ進む"
+          >
+            <span class="floor-card__number">01</span>
+            <div class="floor-card__content">
+              <p class="floor-card__label">VELVET · GOLD · ELEGANCE</p>
+              <h3>A FLOOR</h3>
+              <p class="floor-card__copy">
+                深紅のベルベットと金色の光。<br />
+                格式と妖艶さが交差するメインフロア。
+              </p>
+              <span class="floor-card__cta">OPEN THE DOOR</span>
+            </div>
+            <span class="floor-card__shine" aria-hidden="true"></span>
+          </a>
+
+          <a
+            class="floor-card floor-card--b"
+            href="b-floor.html"
+            aria-label="B FLOORへ進む"
+          >
+            <span class="floor-card__number">02</span>
+            <div class="floor-card__content">
+              <p class="floor-card__label">VIOLET · SILVER · IMPULSE</p>
+              <h3>B FLOOR</h3>
+              <p class="floor-card__copy">
+                紫紺の闇と銀色の残光。<br />
+                個性と刺激が息づくもう一つの舞台。
+              </p>
+              <span class="floor-card__cta">DESCEND BELOW</span>
+            </div>
+            <span class="floor-card__shine" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <button class="back-button" id="backButton" type="button">
+          ← RETURN TO ENTRANCE
+        </button>
+      </section>
+    </main>
+
+    <footer class="credits">
+      <p>VEINN INTRODUCTION WEBSITE</p>
+      <p>Created with permission from the original creator.</p>
+    </footer>
+
+    <div class="transition-curtain" id="transitionCurtain" aria-hidden="true">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
