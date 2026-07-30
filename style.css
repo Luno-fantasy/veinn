@@ -1180,3 +1180,187 @@ a {
   .cast-card__initial { font-size: 190px; }
   .floor-footer { align-items: flex-start; flex-direction: column; gap: 18px; }
 }
+
+/* =========================================================
+   BRIGHTER LUXURY FLOOR THEME
+   黒を残しつつ、ワイン・紫・金の光量を上げる調整
+========================================================= */
+.floor-body {
+  background:
+    radial-gradient(circle at 15% 8%, rgba(var(--floor-rgb), .24), transparent 34%),
+    radial-gradient(circle at 85% 38%, rgba(var(--floor-rgb), .16), transparent 40%),
+    linear-gradient(180deg, #120b0e 0%, #0b080a 48%, #120b0f 100%);
+}
+
+.floor-page {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.018), transparent 18%),
+    #0d090b;
+}
+
+.floor-nav {
+  background: linear-gradient(180deg, rgba(16,10,13,.97), rgba(16,10,13,.72) 58%, rgba(16,10,13,0));
+  border-bottom: 1px solid rgba(228,207,156,.08);
+}
+
+.floor-nav nav a {
+  color: rgba(242,234,223,.68);
+}
+
+.floor-nav nav a:hover,
+.floor-nav nav a.is-current {
+  color: #f5ead7;
+}
+
+.floor-hero--a {
+  background:
+    radial-gradient(circle at 50% 58%, rgba(147,38,69,.46), transparent 38%),
+    radial-gradient(circle at 18% 20%, rgba(103,30,51,.28), transparent 32%),
+    linear-gradient(145deg, #2b1018 0%, #160b10 45%, #2a1018 100%);
+}
+
+.floor-hero--b {
+  background:
+    radial-gradient(circle at 50% 58%, rgba(111,72,145,.48), transparent 38%),
+    radial-gradient(circle at 82% 18%, rgba(88,63,121,.28), transparent 32%),
+    linear-gradient(145deg, #21142d 0%, #120d19 45%, #24162f 100%);
+}
+
+.floor-hero::before {
+  border-color: rgba(242,234,223,.15);
+  box-shadow: inset 0 0 80px rgba(255,255,255,.018);
+}
+
+.floor-hero::after {
+  border-color: rgba(228,207,156,.24);
+}
+
+.floor-hero__veil {
+  background:
+    repeating-linear-gradient(90deg, transparent 0 11%, rgba(255,255,255,.025) 11% 11.2%),
+    linear-gradient(115deg, transparent 30%, rgba(255,255,255,.028) 50%, transparent 70%);
+}
+
+.floor-hero__monogram {
+  color: rgba(255,255,255,.055);
+  text-shadow: 0 0 90px rgba(var(--floor-rgb), .3);
+}
+
+.floor-hero h1 {
+  color: #fff8ed;
+  text-shadow:
+    0 0 28px rgba(255,244,224,.08),
+    0 18px 48px rgba(0,0,0,.35);
+}
+
+.floor-hero__lead {
+  color: rgba(255,246,235,.78);
+}
+
+.floor-section {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(var(--floor-rgb),.1), transparent 34%),
+    rgba(17,11,14,.9);
+}
+
+.floor-section + .floor-section {
+  border-top-color: rgba(242,234,223,.12);
+}
+
+.section-heading--split > p {
+  color: rgba(242,234,223,.55);
+}
+
+.about-grid__copy {
+  color: rgba(255,247,238,.73);
+}
+
+.service-section {
+  background:
+    radial-gradient(circle at 50% 10%, rgba(var(--floor-rgb),.2), transparent 42%),
+    linear-gradient(180deg, rgba(var(--floor-rgb),.14), rgba(18,12,15,.94) 70%);
+}
+
+.service-grid {
+  background: rgba(242,234,223,.15);
+}
+
+.service-grid article {
+  background:
+    linear-gradient(155deg, rgba(var(--floor-rgb),.17), rgba(24,16,20,.96));
+}
+
+.service-grid article:hover {
+  background:
+    linear-gradient(155deg, rgba(var(--floor-rgb),.3), rgba(31,20,25,.98));
+}
+
+.service-grid p {
+  color: rgba(255,247,238,.67);
+}
+
+.cast-card {
+  border-color: rgba(242,234,223,.18);
+  background:
+    radial-gradient(circle at 80% 15%, rgba(var(--floor-rgb),.3), transparent 42%),
+    linear-gradient(155deg, rgba(var(--floor-rgb),.25), rgba(25,16,20,.97) 60%);
+  box-shadow: 0 24px 70px rgba(0,0,0,.24);
+}
+
+.cast-card:hover,
+.cast-card:focus-visible {
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.3),
+    0 0 42px rgba(var(--floor-rgb),.2);
+}
+
+.cast-card__initial {
+  color: rgba(255,255,255,.075);
+}
+
+.cast-card__copy {
+  color: rgba(255,247,238,.68);
+}
+
+.owner-story {
+  background:
+    radial-gradient(circle at 50% 48%, rgba(var(--floor-rgb),.3), transparent 55%),
+    linear-gradient(180deg, #171015, #100b0e);
+}
+
+.owner-story > p:last-child {
+  color: rgba(255,247,238,.67);
+}
+
+.story-link {
+  background:
+    radial-gradient(circle at 50% 35%, rgba(var(--floor-rgb),.18), transparent 46%),
+    #120c10;
+  border-top-color: rgba(242,234,223,.12);
+}
+
+.story-link a {
+  background: rgba(var(--floor-rgb),.22);
+  box-shadow: inset 0 0 26px rgba(255,255,255,.025);
+}
+
+.floor-footer {
+  background: #0f0a0d;
+  border-top-color: rgba(242,234,223,.12);
+  color: rgba(242,234,223,.48);
+}
+
+.cast-dialog {
+  background:
+    radial-gradient(circle at 80% 10%, rgba(var(--floor-rgb),.28), transparent 40%),
+    #181014;
+  box-shadow: 0 40px 130px rgba(0,0,0,.62);
+}
+
+.cast-dialog__meta {
+  color: rgba(242,234,223,.58);
+}
+
+.cast-dialog__description {
+  color: rgba(255,247,238,.78);
+}
